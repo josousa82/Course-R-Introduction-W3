@@ -6,10 +6,8 @@
 makeCacheMatrix <- function(x = matrix()) {
   matrInv <- NULL
   
-  ## This function sets the value of x, that is in the parent environment with y
-  ## using the deep assignment operator and makes matr = Null, in practice resets 
-  ## the atribute of the object.
   getx <- function() x
+  
   set <- function(y){
     x <<- y
     matrInv <<- NULL
